@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--corSecundaria);
+    height: 100vh;
+}
+
+.conteiner-text{
+    font-family: var(--fontPrincipal);
+    color: var(--corFundo);
+    width: 50%;
+    line-height: 5rem;
+}
+
+.conteiner-text .hero-top{
+    font-size: 1.1rem;
+}
+
+.conteiner-text .hero-text{
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.box-curso{
+    background-color: var(--corTerciaria);
+    padding: 25px;
+    border: 2px solid var(--corLetras);
+    border-radius: 8px;
+}
+
+.box-curso .preco{
+    margin: 0 auto;
+    background-color: var(--corFundo);
+    line-height: 2rem;
+    border-radius: 4px;
+    text-align: center;
+    font-family: var(--fontPrincipal);
+    padding: 5px 0 5px 0 ;
+}
+
+.box-curso hr{
+    border: 1px solid var(--corLetras);
+    margin: 20px 0 20px 0;
+}
+
+.box-curso .vantagens ul{
+    list-style: none;
+}
+
+.vantagens ul li{
+    line-height: 40px;
+    font-family: var(--fontPrincipal);
+    font-size: 1rem;
+    font-weight: 800;
+    padding-right:10px ;
+    color: var(--corFundo);
+}

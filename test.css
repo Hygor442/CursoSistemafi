@@ -1,0 +1,93 @@
+.divise{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    bottom: 1px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 3px;
+    left: 50%;
+    z-index: 1;
+}
+.vv{
+    clip-path: polygon(82% 0, 82% 13%, 55% 13%, 48% 20%, 48% 31%, 29% 31%, 28% 18%, 34% 5%, 45% 0);
+    background: black;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .conteiner-text{
+    width: 75%;
+
+}
+
+header .conteiner-curso{
+    height: 70%;
+    width: 25%;
+    background: red;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header .conteiner-curso .preco{
+    height: 150px;
+    width: 300px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 1rem;
+    background:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.preco h2,h3{
+    padding: 0.4rem;
+}
+
+.preco h2{
+    font-size: 2rem;
+
+}
+
+.conteiner-curso hr{
+    width: 20rem;
+    margin: 1rem;
+    background: gainsboro;
+}
+
+header .conteiner-curso .vantagens{
+    height: 150px;
+    background: greenyellow;
+    padding: .5rem;
+}
+
+.vantagens p{
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
