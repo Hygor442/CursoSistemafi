@@ -239,19 +239,19 @@ section{
 }
 
 .conteiner-section .circle2{
-    top: 78%;
+    top: 70%;
     right: 75%;
 }
 
 .conteiner-section .circle3{
-    top: 75%;
+    top: 70%;
     left: 85%;
 }
 
 .circle1,.circle2,.circle3{
     position: absolute;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     background: linear-gradient(var(--corSecundaria), var(--corTerciaria));
 }
@@ -309,4 +309,112 @@ section{
     font-family: var(--fontPrincipal);
     font-size: 3rem;
     padding-top: 1rem;
+}
+
+.conteiner-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+
+    min-height: 100vh;
+    background: rgb(9,74,136);
+}
+
+.conteiner-cards .equipe{
+    height: 5rem;
+    font-family: var(--fontPrincipal);
+    letter-spacing: 1px;
+    font-size: 4.5rem;
+    padding: 2rem;
+    color: var(--corFundo);
+    margin: 1rem 0 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:4;
+
+    
+    
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotate(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    font-family: var(--fontPrincipal);
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3,35,54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card ul{
+    list-style: none;
+    padding: 1rem;
+}
+
+.card ul li{
+    font-family: var(--fontPrincipal);
+    line-height: 2rem;
+}
+
+.card .back h3{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: var(--fontPrincipal);
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
 }
