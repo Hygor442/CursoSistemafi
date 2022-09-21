@@ -121,6 +121,13 @@ header{
     height: 376px;
     background: #fff;
     display: flex;
+    overflow: hidden;
+}
+
+.depoimento .relato{
+    color: gold;
+    font-size: 1rem;
+    text-align: justify;
 }
 
 .depoimento .relato,.depoimento .title{

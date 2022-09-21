@@ -1,12 +1,41 @@
 @media only screen and (max-width: 768px)
 {
+    /*header*/
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .conteiner-text{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    header .conteiner-text .hero-top{
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1;
+    }
+    header .conteiner-text .hero-text{
+        width: 100%;
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+    }
     /*Slides*/
     .main-conteiner #title{
         width: 100%;
         padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .main-conteiner #title h2{
-        font-size: 5rem;
+        font-size: 2.5rem;
         color: #fff;
     }
     .main-conteiner .slide{
@@ -27,6 +56,12 @@
         width: 1024px;
         display: flex;
         align-items: center;
+        overflow: hidden;
+    }
+    .main-conteiner .relato{
+        font-size: 1rem;
+        color: blueviolet;
+        overflow-y: scroll;
     }
     .main-conteiner .balls{
         width: 750px;
@@ -47,12 +82,32 @@
     
 
     /*endereço*/
+    .conteiner-section .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteiner-section .content .local{
+        width: 100%;
+    }
+    .conteiner-section .card-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .conteiner-section .circle1,.circle2,.circle3{
         position: absolute;
         height: 100px;
         width: 100px;
         border-radius: 50%;
         background: linear-gradient(var(--corSecundaria), var(--corTerciaria));
+    }
+    .conteiner-section h1{
+       margin-bottom: 3rem;
+    }
+    .conteiner-section .content p{
+        font-size: 1.9rem;
     }
 }
 

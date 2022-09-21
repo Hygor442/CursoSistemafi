@@ -48,7 +48,7 @@ function slide(){   // passa as imagens
 };
 
 slide(); // inicia o slide
-
+/*
 setInterval(() => {     //passada automatica de imagens
     if(rolar){
     atual++;
@@ -57,3 +57,4 @@ setInterval(() => {     //passada automatica de imagens
         rolar = true;
     }    
 },4000) // => tempo (4s)
+*/

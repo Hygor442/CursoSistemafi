@@ -5,13 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="test.css">
+    <style>
+        #box{
+            width: 200px;
+            text-align: justify;
+            background: gray;
+            height: 200px;
+            border-radius: 8px;
+        }
+        .mudar{
+            overflow-y: scroll;
+            padding: 1rem;
+            margin: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <div class="vv">
-        <div class="divise"></div>
-        <div class="circle1"></div>
-        <div class="circle2"></div>
+    <div id="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro debitis adipisci quos molestias explicabo et doloremque officiis. Aut deleniti explicabo repudiandae quasi, alias odit quibusdam amet repellendus atque est sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iste velit inventore doloribus quis consequuntur veritatis praesentium maiores voluptas, quidem laborum nostrum sint accusantium magni aperiam a porro repudiandae. Repellat!</p>
     </div>
+    <div id="box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi cum fuga sapiente quae laborum quisquam! Incidunt illum veniam molestiae eligendi fugiat quam consequatur maiores optio itaque neque, et eaque tempore.</p>
+    </div>
+
+    <script>
+        let list;
+        let box = document.querySelector("#box");
+        function mudar(){
+            list = document.querySelectorAll("div#box");
+            for(var i = 0; i < list.length; i++){
+                list[i].classList.add('mudar');
+            }
+        }
+        mudar()
+    </script>
 </body>
 </html>
